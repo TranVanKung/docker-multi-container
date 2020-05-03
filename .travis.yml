@@ -8,14 +8,14 @@ before_install:
 script:
   - docker run -e CI=true react-test npm test
 after_success:
-  - docker build -t multi-client ./client
-  - docker build -t multi-nginx ./nginx
-  - docker build -t multi-server ./server
-  - docker build -t multi-worker ./worker
+  - docker build -t tranvancong/multi-client ./client
+  - docker build -t tranvancong/multi-nginx ./nginx
+  - docker build -t tranvancong/multi-server ./server
+  - docker build -t tranvancong/multi-worker ./worker
   # login to docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # take able image to push to docker hub
-  - docker push multi-client
-  - docker push multi-nginx
-  - docker push multi-server
-  - docker push multi-worker
+  - docker push tranvancong/multi-client
+  - docker push tranvancong/multi-nginx
+  - docker push tranvancong/multi-server
+  - docker push tranvancong/multi-worker

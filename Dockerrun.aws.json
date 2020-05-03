@@ -1,0 +1,9 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "client",
+      "image": "tranvancong/multi-client"
+    }
+  ]
+}
