@@ -3,7 +3,9 @@
   "containerDefinitions": [
     {
       "name": "client",
-      "image": "tranvancong/multi-client"
+      "image": "tranvancong/multi-client",
+      "hostname": "client",
+      "essential": false
     }
   ]
 }
