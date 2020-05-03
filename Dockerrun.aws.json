@@ -6,6 +6,23 @@
       "image": "tranvancong/multi-client",
       "hostname": "client",
       "essential": false
+    },
+    {
+      "name": "server",
+      "image": "tranvancong/multi-server",
+      "hostname": "api",
+      "essential": false
+    },
+    {
+      "name": "worker",
+      "image": "tranvancong/multi-worker",
+      "hostname": "worker",
+      "essential": false
+    },
+    {
+      "name": "nginx",
+      "image": "tranvancong/multi-nginx",
+      "essential": true
     }
   ]
 }
