@@ -5,24 +5,28 @@
       "name": "client",
       "image": "tranvancong/multi-client",
       "hostname": "client",
-      "essential": false
+      "essential": false,
+      "memory": 128
     },
     {
       "name": "server",
       "image": "tranvancong/multi-server",
       "hostname": "api",
-      "essential": false
+      "essential": false,
+      "memory": 128
     },
     {
       "name": "worker",
       "image": "tranvancong/multi-worker",
       "hostname": "worker",
-      "essential": false
+      "essential": false,
+      "memory": 128
     },
     {
       "name": "nginx",
       "image": "tranvancong/multi-nginx",
       "essential": true,
+      "memory": 128,
       "portMapping": [
         {
           "hostPort": 80,
