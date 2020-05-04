@@ -28,7 +28,7 @@
       "image": "tranvancong/multi-nginx",
       "essential": true,
       "memory": 128,
-      "portMapping": [
+      "portMappings": [
         {
           "hostPort": 80,
           "containerPort": 80
